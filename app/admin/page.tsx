@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { supabaseClient, type Announcement, type BotChat } from "@/lib/supabase"
-import { useToast } from "@/components/ui/toast"
+import { useToast } from "@/hooks/use-toast"
 import { RefreshCw } from "lucide-react"
 
 export default function AdminPage() {
@@ -66,7 +66,7 @@ export default function AdminPage() {
     }
 
     loadData()
-  }, [])
+  }, [toast])
 
   // Grupları yenile
   const refreshChats = async () => {
