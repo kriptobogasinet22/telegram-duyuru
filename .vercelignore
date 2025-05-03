@@ -1,0 +1,9 @@
+# Telegram bot API ile ilgili dosyaları hariç tut
+node_modules/node-telegram-bot-api
+node_modules/request
+node_modules/debug
+
+# Gereksiz dosyaları hariç tut
+.git
+.github
+README.md
